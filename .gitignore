@@ -1,0 +1,41 @@
+# Archivos generados por Eclipse
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+# Configuraciones de lanzamiento de Eclipse
+*.launch
+
+# Configuraciones específicas de PyDev (Python IDE para Eclipse)
+*.pydevproject
+
+# Configuraciones específicas de CDT (Herramientas de desarrollo C/C++)
+.cproject
+
+# Configuraciones específicas de Java (APT)
+.factorypath
+
+# Configuraciones específicas de PDT (Herramientas de desarrollo PHP)
+.buildpath
+
+# Configuraciones específicas de sbteclipse plugin
+.target
+
+# Configuraciones específicas de Tern plugin
+.tern-project
+
+# Configuraciones específicas de TeXlipse plugin
+.texlipse
+
+# Configuraciones específicas de STS (Spring Tool Suite)
+.springBeans
+
+# Configuraciones específicas de Code
