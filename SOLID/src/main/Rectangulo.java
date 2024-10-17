@@ -46,9 +46,10 @@ public class Rectangulo {
 	public float area() {
 		return this.getBase() * this.getAltura();
 	}
-	
-	public void imprimir() {
-		System.out.println(this);
-	}
+	// Este metodo hace que no se cumpla el principio de responsabilidad simple de SOLID
+	// por eso es comenta y se crea una nueva clase que se encargue de este requerimiento "Presentacion.class".
+	/*
+	 * public void imprimir() { System.out.println(this); }
+	 */
 
 }
