@@ -1,6 +1,6 @@
 package liskov;
 
-public class Jaguar extends Animal implements IFelino{
+public class Jaguar extends Animal implements IFelinoSalvaje {
 	private int edad;
 	private float peso;
 
@@ -60,11 +60,11 @@ public class Jaguar extends Animal implements IFelino{
 		System.out.println("El jaguar ruge");
 	}
 
-	@Override
-	public void maullar() {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("El jaguar no maulla");
-	}
+	//Ya no es necesario implementar este metodo porque ahora Jaguar implementa IFelinoSalvaje y no IFelino
+	/*
+	 * @Override public void maullar() { // TODO Auto-generated method stub throw
+	 * new UnsupportedOperationException("El jaguar no maulla"); }
+	 */
 
 	@Override
 	public void cazar() {

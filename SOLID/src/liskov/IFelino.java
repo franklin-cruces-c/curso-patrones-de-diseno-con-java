@@ -1,9 +1,9 @@
 package liskov;
 
 public interface IFelino {
-	void rugir();
+	//void rugir();
 
-	void maullar();
+	//void maullar();
 
 	void cazar();
 }
