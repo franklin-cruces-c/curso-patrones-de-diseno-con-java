@@ -7,6 +7,11 @@ public class Main {
         Rectangulo rectangulo = new Rectangulo(10, 20);
         Presentacion presentacion = new Presentacion();
         presentacion.imprimir(rectangulo);
+        
+        Triangulo triangulo = new Triangulo(10, 5);
+        presentacion.area(rectangulo);
+        presentacion.area(triangulo);
+        
 	}
 
 }
