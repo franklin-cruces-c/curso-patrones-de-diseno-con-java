@@ -1,6 +1,6 @@
 package main;
 
-public class Rectangulo {
+public class Rectangulo implements IFigura{
 	private float base;
 	private float altura;
 

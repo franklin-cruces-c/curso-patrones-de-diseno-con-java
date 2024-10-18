@@ -1,6 +1,6 @@
 package main;
 
-public class Triangulo {
+public class Triangulo implements IFigura{
 	private float base;
 	private float altura;
 
