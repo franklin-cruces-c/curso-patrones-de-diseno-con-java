@@ -45,8 +45,9 @@ public class Usuario {
 	/**
 	 * @param email the email to set
 	 */
-	public void setEmail(String email) {
+	public Usuario setEmail(String email) {
 		this.email = email;
+		return this;
 	}
 
 	/**
@@ -59,8 +60,9 @@ public class Usuario {
 	/**
 	 * @param telefono the telefono to set
 	 */
-	public void setTelefono(String telefono) {
+	public Usuario setTelefono(String telefono) {
 		this.telefono = telefono;
+		return this;
 	}
 
 	/**
@@ -73,43 +75,39 @@ public class Usuario {
 	/**
 	 * @param direccion the direccion to set
 	 */
-	public void setDireccion(String direccion) {
+	public Usuario setDireccion(String direccion) {
 		this.direccion = direccion;
+		return this;
 	}
 
-	public Usuario(String nombre) {
-		super();
-		this.nombre = nombre;
-	}
-
-	public Usuario(String nombre, String apellido) {
+	private Usuario(String nombre, String apellido) {
 		super();
 		this.nombre = nombre;
 		this.apellido = apellido;
+
+		this.email = "";
+		this.telefono = "";
+		this.direccion = "";
 	}
 
-	public Usuario(String nombre, String apellido, String email) {
-		super();
-		this.nombre = nombre;
-		this.apellido = apellido;
-		this.email = email;
+	/**
+	 * Por convencion a este metodo se le llama Make
+	 */
+	public static Usuario Make(String nombre, String apellido) {
+		return new Usuario(nombre, apellido);
 	}
 
-	public Usuario(String nombre, String apellido, String email, String telefono) {
-		super();
-		this.nombre = nombre;
-		this.apellido = apellido;
-		this.email = email;
-		this.telefono = telefono;
+	/**
+	 * Por convencion a este metodo se le llama Build
+	 */
+	public Usuario Build() {
+		return this;
 	}
 
-	public Usuario(String nombre, String apellido, String email, String telefono, String direccion) {
-		super();
-		this.nombre = nombre;
-		this.apellido = apellido;
-		this.email = email;
-		this.telefono = telefono;
-		this.direccion = direccion;
+	@Override
+	public String toString() {
+		return "Usuario [nombre=" + nombre + ", apellido=" + apellido + ", email=" + email + ", telefono=" + telefono
+				+ ", direccion=" + direccion + "]";
 	}
 
 }
