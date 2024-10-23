@@ -14,6 +14,13 @@ public class Main {
 		enemigo1.setPosX(100);
 		enemigo2.setPosX(150);
 		enemigo3.setPosX(200);
+		
+		Enemigo enemigoBase2 = new Enemigo("Imagen1.png", 0, 200, 2);
+		
+		Enemigo enemigo4 = enemigoBase2.clone();
+		Enemigo enemigo5 = enemigoBase2.clone();
+		Enemigo enemigo7 = enemigoBase2.clone();
+		 
 
 	}
 
