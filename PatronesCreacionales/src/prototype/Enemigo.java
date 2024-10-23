@@ -21,6 +21,14 @@ public class Enemigo {
 		this.cantidadVida = enemigo.getCantidadVida();
 	}
 
+	public Enemigo clone() {
+		return new Enemigo(this);
+	}
+
+	public Enemigo clone2() {
+		return new Enemigo(this.imagen, this.posX, this.posY, this.cantidadVida);
+	}
+
 	@Override
 	public String toString() {
 		return "Enemigo [" + (imagen != null ? "imagen=" + imagen + ", " : "") + "posX=" + posX + ", posY=" + posY
