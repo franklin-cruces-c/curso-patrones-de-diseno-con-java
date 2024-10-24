@@ -12,10 +12,20 @@ public class Main {
 
 		System.out.println(pizzaHawaiana.descripcion());
 		System.out.println(pizzaHawaiana.precio());
-		
-		
-		//Queso extra 2 dolares
-		//Borde de queso 4 dolares
+
+		// Queso extra 2 dolares
+		// Borde de queso 4 dolares
+
+		// IPizza pizzaPeperoniQuesoExtra = new QuesoExtra(pizzaPeperoni);
+		IPizza pizzaPeperoniQuesoExtra = new QuesoExtra(new PizzaPeperoni());
+
+		System.out.println(pizzaPeperoniQuesoExtra.descripcion());
+		System.out.println(pizzaPeperoniQuesoExtra.precio());
+
+		IPizza pizzaHawaianaBordeQuesoyQuesoExtra = new BordeQueso(new QuesoExtra(new PizzaHawaiana()));
+
+		System.out.println(pizzaHawaianaBordeQuesoyQuesoExtra.descripcion());
+		System.out.println(pizzaHawaianaBordeQuesoyQuesoExtra.precio());
 
 	}
 

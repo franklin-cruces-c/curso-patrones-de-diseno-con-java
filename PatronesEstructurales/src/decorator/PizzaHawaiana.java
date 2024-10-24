@@ -3,7 +3,7 @@ package decorator;
 public class PizzaHawaiana implements IPizza {
 	@Override
 	public String descripcion() {
-		return "Pizza de hawaiana";
+		return "Pizza hawaiana";
 	}
 
 	@Override
