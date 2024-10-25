@@ -3,7 +3,12 @@ package command;
 public class Main {
 
 	public static void main(String[] args) {
-		TV tv = new TV();
+		IDevice tv = new TV();
+		ICommand on = new OnDevice(tv);
+		ICommand off = new OffDevice(tv);
+
+		on.operacion();
+		off.operacion();
 	}
 
 }
